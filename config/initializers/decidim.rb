@@ -2,17 +2,18 @@
 
 Decidim.configure do |config|
   # The name of the application
-  config.application_name = "My Application Name"
+  config.application_name = "Ecologie-bzh"
 
   # The email that will be used as sender in all emails from Decidim
-  config.mailer_sender = "change-me@domain.org"
+  config.mailer_sender = "bzh21.eis@gmail.com"
 
   # Sets the list of available locales for the whole application.
   #
   # When an organization is created through the System area, system admins will
   # be able to choose the available languages for that organization. That list
   # of languages will be equal or a subset of the list in this file.
-  config.available_locales = [:en, :ca, :es]
+  config.default_locale = :fr
+  config.available_locales = [:fr, :en, :ca, :es]
 
   # Restrict access to the system part with an authorized ip list.
   # You can use a single ip like ("1.2.3.4"), or an ip subnet like ("1.2.3.4/24")
